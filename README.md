@@ -1,12 +1,20 @@
-# {{ Repository_Name }}
+# BeyondNeuralFog
 
-The aim of this repository is to provide details of the data sets and code used in the related research titled *{{ Research_Title }}*.
+The aim of this repository is to provide details of the data sets and code used in the related research titled *Beyond the Neural Fog: Interpretable Learning for AC Optimal Power Flow* ([Link to paper](https://arxiv.org/pdf/2408.05228)).
 
 ## Data Description
 
 The following files are included in this repository:
-* `{{ File_1_Name }}`: {{ File_1_Description }}
-* `{{ File_2_Name }}`: {{ File_2_Description }}
+* `case14.m`: MATPOWER file containing data for the IEEE 14-bus power system.
+* `case30.m`: MATPOWER file containing data for the IEEE 30-bus power system.
+* `case57.m`: MATPOWER file containing data for the IEEE 57-bus power system.
+* `case118.m`: MATPOWER file containing data for the IEEE 118-bus power system.
+
+We have used the dataset from Joswig-Jones, Trager, Ahmed Zamzam, and Kyri Baker. 2021. "OPFLearnData: Dataset for Learning AC Optimal Power Flow." NREL Data Catalog. Golden, CO: National Renewable Energy Laboratory. Last updated: January 21, 2025. DOI: 10.7799/1827404. In particular:
+* `opflearn_case14_IEEE`: [pglib_opf_case14_ieee.csv](https://data.nrel.gov/system/files/177/pglib_opf_case14_ieee.csv)
+* `opflearn_case30_IEEE`: [pglib_opf_case30_ieee.csv](https://data.nrel.gov/system/files/177/pglib_opf_case30_ieee.csv)
+* `opflearn_case57_IEEE`: [pglib_opf_case57_ieee.csv](https://data.nrel.gov/system/files/177/pglib_opf_case57_ieee.csv)
+* `opflearn_case118_IEEE`: [pglib_opf_case118_ieee.csv](https://data.nrel.gov/system/files/177/pglib_opf_case118_ieee.csv)
 
 ## References
 
@@ -14,16 +22,15 @@ The following files are included in this repository:
 
 ## Developed by
 
-* {{ Developer_1_Name }} ([{{ Developer_1_Email }}](mailto:{{ Developer_1_Email }})) - [GitHub: {{ Developer_1_GitHub }}](https://github.com/{{ Developer_1_GitHub }})  
-* {{ Developer_2_Name }} ([{{ Developer_2_Email }}](mailto:{{ Developer_2_Email }})) - [GitHub: {{ Developer_2_GitHub }}](https://github.com/{{ Developer_2_GitHub }})  
-* {{ Developer_3_Name }} ([{{ Developer_3_Email }}](mailto:{{ Developer_3_Email }})) - [GitHub: {{ Developer_3_GitHub }}](https://github.com/{{ Developer_3_GitHub }})
+* S. Pineda ([spineda@uma.es](mailto:spineda@uma.es)) - [GitHub: salvapineda](https://github.com/salvapineda)  
+* Juan Pérez ([jperez@uma.es](mailto:jperez@uma.es))  
+* J.M. Morales ([juan.morales@uma.es](mailto:juan.morales@uma.es)) - [GitHub: Juanmi82mg](https://github.com/Juanmi82mg)  
 
 ## Funding
 
-This work was supported by the following projects:  
-* {{ Funding_Project_1_Details }}  
-* {{ Funding_Project_2_Details }}  
-* {{ Funding_Project_3_Details }}
+This work was supported by the Spanish Ministry of Science and Innovation (AEI/10.13039/501100011033) through projects:
+  * PID2020-115460GB-I00  
+  * PID2023-148291NB-I00  
 
 ## How to cite the repo and the paper?
 
@@ -42,11 +49,11 @@ author = {{ {{ Authors }} }}
 ```
 * Repository:
 ```
-@misc{{ {{ Repository_Citation_Key }},
-author={{ {{ Repository_Author }} }},
-year={{ {{ Repository_Year }} }},
-title = {{ {{ Repository_Title }} }},
-howpublished = {{\url{{ {{ Repository_URL }} }} }}
+@misc{{BeyondNeuralFog,
+author = {S. Pineda and J. Pérez and J.M. Morales},
+year = {2024},
+title = {BeyondNeuralFog},
+howpublished = {\url{https://github.com/groupoasys/BeyondNeuralFog}}
 }
 ```
 
